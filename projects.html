@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, width=device-width">
+    <title>Projects</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Teko&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <!-- <link href="fontawesome/css/all.css" rel="stylesheet">  </head> -->
+  </head>
+  <body>
+    <div class="wrapper-projects">
+      <!-- <header>/*Jade Hampton*/ -->
+      <!-- <header>
+        <nav class="nav-flex-container">
+          <ul>
+            <li class="logo"> Jade Hampton</li>
+            <li><a href="index.html"> Home </a></li>
+            <li><a href="projects.html"> Projects </a></li>
+          </ul>
+        </nav>
+
+      </header> -->
+      <aside>
+        <div class="aside-header-container">
+          <img srcset="images/profilepic-302w.jpg 302w,
+             images/profilepic-600w.png 600w"
+             sizes="(max-width: 37.5em) 400px,
+             (min-width: 50.0em) 600px"
+             src="images/profilepic-600w.png"
+          alt="Profile Picture" class="projects-profile-pic">
+          <nav class="nav-flex-container-project">
+            <div> <h1> Jade Hampton </h1> </div>
+            <div class="w3-bar-item w3-hide-small nav-item-projects">
+              <a href="index.html"> <i class="fas fa-home"></i></a>
+              <a href="index.html"> Home </a>
+            </div>
+            <div class="w3-bar-item w3-hide-small w3-hide-medium nav-item-projects">
+              <a href="projects.html"><i class="fas fa-briefcase"></i></a>
+              <a href="projects.html">Projects </a>
+            </div>
+            <!-- <a href="index.html" class="w3-bar-item w3-button w3-hide-small">Home</a> -->
+            <!-- <a href="projects.html" class="w3-bar-item w3-button w3-hide-small">Projects</a> -->
+
+            <!-- Hide the hamburger icon on large and medium screens, but show on small ones -->
+            <!-- When the hamburger icon is clicked, call myFunction to show/hide toggle the container -->
+            <a href="javascript:void(0)"
+               class="w3-bar-item w3-left w3-hide-large w3-hide-medium"
+               onclick="myFunction()"><i class="fas fa-bars fa-lg"></i></a>
+          </nav>
+
+          <!-- Vertical container (w3-bar-block) for nav elements -->
+          <nav id="demo" class="w3-bar-block w3-hide w3-hide-large w3-hide-medium">
+            <a href="index.html" class="w3-bar-item w3-button">Home</a>
+            <a href="projects.html" class="w3-bar-item w3-button">Projects</a>
+          </nav>
+          <div id="wrap">
+            <!-- <h1 class="logoprojects"> Jade Hampton </h1> -->
+            <p>
+              Here are some of my most prominent projects that I've either worked on in the past
+              or am actively working on at the moment. Click on an image within a card to learn
+              more about the project and the processes involved.
+            </p>
+          </div>
+        </div>
+        <!-- <nav class="nav-flex-container-projects">
+          <div class="nav-item-projects">
+            <a href="index.html"> <i class="fas fa-home"></i></a>
+            <a href="index.html"> Home </a>
+          </div>
+          <div class="nav-item-projects">
+            <a href="projects.html"><i class="fas fa-briefcase"></i></a>
+            <a href="projects.html"> Projects </a>
+          </div>
+        </nav> -->
+        <script src="js/nav-bar-project.js"></script>
+      </aside>
+      <article>
+        <div class="project-card-container">
+          <div class="project-card">
+            <img src="images/portfolio.jpg" alt="Portfolio Homepage Picture" class="project-card-pic">
+            <h1>This site.</h1>
+            <p id="details1">
+              This website is a portfolio that I created in my Web Development course in Spring 2020.
+            </p>
+            <p id="showHide1"> See description </p>
+          </div>
+          <div class="project-card">
+            <a href="rdi.html">
+              <img src="images/RDI.jpg" alt="RDI Project Picture" class="project-card-pic">
+            </a>
+              <h1>Rare Diseases InfoHub.</h1>
+              <p id="details2">
+                Since May 2019, I've been working with NC State as an intern to help with the development
+                of the <a href="https://rarediseases.oscar.ncsu.edu/">Rare Diseases InfoHub</a> site.
+              </p>
+              <p id="showHide2"> See description </p>
+          </div>
+          <div class="project-card">
+            <img src="images/drone.jpg" alt="DJI Phantom 4 RTK Picture" class="project-card-pic">
+            <h1>Drone Project.</h1>
+            <p id="details3">
+              Currently, I am working with a group of 4 other undergraduate students on a project
+              to attach a GoPro Fusion 360 camera to a DJI Phantom 4 RTK drone and use it to get
+              3D footage of forests.
+            </p>
+            <p id="showHide3"> See descripton </p>
+          </div>
+        </div>
+        <script src="js/show-hide-description.js"></script>
+      </article>
+      <footer> Designed and Developed by Jade Hampton </footer>
+    </div>
+  </body>
+</html>

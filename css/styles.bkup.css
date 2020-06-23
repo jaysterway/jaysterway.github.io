@@ -1,0 +1,295 @@
+/* -----------------------------------------------------------
+UNIVERSAL
+----------------------------------------------------------- */
+:root {
+   --main-color: #202020;
+   --highlight-color: #faebd7;
+   --link-color: #8F974C;
+}
+body  {
+  font-family: Helvetica, Didot, calibri;
+  color: var(--highlight-color);
+  background-color: var(--main-color);
+  background-image: linear-gradient(#202020, #404040);
+  margin: 0;
+}
+/* header  { grid-area: head;
+  font-family: 'Teko', Helvetica, Didot, calibri;
+  color: #202020;
+  font-size: 2em;
+  background-color: #faebd7;
+  padding: .3em;
+ } */
+footer  { grid-area: foot;
+  font-size: .8em;
+  text-align: center;
+  padding: 1%;
+  border-top: .1em solid var(--highlight-color);
+  /* padding-top: 2em; */
+}
+article { grid-area: main;
+}
+aside { grid-area: side;
+  background-color: var(--highlight-color);
+  color: var(--main-color);
+  padding: 5%;
+  text-align: center;
+  /* margin-right: 5%; */
+}
+h1  {
+  font-family: 'Teko', Helvetica, Didot, calibri;
+  font-size: 5em;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 2%;
+  margin-bottom: 4%;
+}
+h2  {
+  font-size: 2em;
+  margin-top: 2%;
+  margin-left: 2%;
+}
+p {
+  font-size: 1.2em;
+  margin-left: 4%;
+}
+a {
+  color: var(--link-color);
+  font-weight: bold;
+}
+.fa-home  {
+  font-size: 5em;
+}
+.fa-briefcase {
+  font-size: 5em;
+}
+/* -----------------------------------------------------------
+HOMEPAGE
+----------------------------------------------------------- */
+.homepage-nav-container {
+  grid-area: navi;
+  background-color: var(--highlight-color);
+}
+.wrapper  {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-areas:
+    /* "head head head head head head" */
+    "main main main main main main"
+    "navi navi navi navi navi navi"
+    "foot foot foot foot foot foot";
+  margin: 0;
+}
+.header-card {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 5em;
+}
+.header-card h1 {
+  font-family: 'Teko', Helvetica, Didot, calibri;
+  font-size: 4em;
+  font-weight: bold;
+  text-align: center;
+  line-height: .8em;
+  /* margin-top: 2%;
+  margin-bottom: 4%; */
+  margin: 0;
+}
+.column {
+  flex: 1;
+}
+.prof-pic-container {
+  flex: 1;
+}
+.content-container  {
+  flex: 2;
+}
+.home-profile-pic {
+  border-radius: 50%;
+  /* border: .3em solid #E0E0E0;  */
+  border: .4em solid var(--highlight-color);
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  /* margin-top: 2%; */
+  display: block;
+}
+.button {
+  /* background-color: #ddd; */
+  border: .1em solid var(--highlight-color);
+  color: var(--highlight-color);
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  /* display: inline-block; */
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 16px;
+}
+.nav-item-home {
+  /* display: flex; */
+  color: var(--main-color);
+  /* border: .1em solid black; */
+  flex: 1;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  margin: .5em;
+}
+/* .nav-item a {
+  color: var(--main-color);
+} */
+.nav-flex-homepage {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.homepage-flex-container  {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 2em;
+  padding: 2em;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+.nav-flex-container ul  {
+  /* background-color: #faebd7; */
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+/* .nav-flex-container a {
+  color: #202060;
+  display: block;
+  text-align: center;
+  padding-left: 1em;
+  padding-right: 1em;
+} */
+.logo {
+  margin-right: auto;
+  font-size: 2em;
+}
+nav a {
+  color: var(--main-color);
+  display: block;
+  text-align: center;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+.pitch  {
+  text-align: center;
+  font-style: italic;
+  /* margin-left: 10%;
+  margin-right: 10%; */
+}
+/* -----------------------------------------------------------
+PROJECTS
+----------------------------------------------------------- */
+.wrapper-projects  {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-areas:
+    "side side main main main main main main"
+    "side side main main main main main main"
+    "foot foot foot foot foot foot foot foot";
+  margin: 0;
+}
+.projects-profile-pic {
+  border-radius: 50%;
+  /* border: .3em solid #E0E0E0;  */
+  border: .4em solid var(--main-color);
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2%;
+  display: block;
+}
+.nav-flex-container-projects  {
+  margin: 20%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  color: var(--main-color);
+}
+.nav-item-projects  {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  margin: .5em;
+}
+.logoprojects {
+  /* margin-right: auto; */
+  font-family: 'Teko', Helvetica, Didot, calibri;
+  font-size: 4em;
+  margin: 0;
+}
+.project-card-container {
+  display: grid;
+  grid-template-columns: repeat(2, 3fr);
+  /* grid-auto-rows: ; */
+  grid-gap: 3%;
+  color: var(--main-color);
+  margin: 5%;
+  /* border: 1em solid var(--main-color); */
+  /* margin: 3%; */
+}
+#details1, #details2, #details3, #details4 { display: none; }
+
+#showHide1, #showHide2, #showHide3, #showHide4 {
+  color: var(--link-color);
+  font-weight: bold;
+}
+.project-card a {
+  color: var(--main-color);
+  font-weight: normal;
+  font-style: normal;
+}
+.project-card {
+  background-color: var(--highlight-color);
+  padding: .5em;
+  border-radius: 2em;
+  align-items: center;
+}
+.project-picture  {
+  max-width: 90%;
+  display: block;
+  border-radius: 2em;
+  border: .5em solid var(--main-color);
+}
+.project-card h1  {
+  font-family: 'Teko', Helvetica, Didot, calibri;
+  font-size: 2em;
+  font-weight: bold;
+  text-align: left;
+  /* margin-top: 2%; */
+  /* margin-bottom: 4%; */
+  border-bottom: .05em solid var(--main-color);
+}
+/* -----------------------------------------------------------
+SINGLE PROJECT
+----------------------------------------------------------- */
+.wrapper-project  {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-areas:
+    "side side main main main main main main"
+    "side side main main main main main main"
+    "foot foot foot foot foot foot foot foot";
+  margin: 0;
+}
+.project-container  {
+  color: var(--highlight-color);
+  padding: 2em;
+
+}

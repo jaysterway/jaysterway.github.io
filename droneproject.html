@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, width=device-width">
+    <title>Drone Project</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Teko&display=swap" rel="stylesheet">
+    <!-- <link href="fontawesome/css/all.css" rel="stylesheet">   -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  </head>
+  <body>
+    <div class="wrapper-project">
+      <aside>
+        <img srcset="images/profilepic-302w.jpg 302w,
+           images/profilepic-600w.png 600w"
+           sizes="(max-width: 37.5em) 400px,
+           (min-width: 50.0em) 600px"
+           src="images/profilepic-600w.png"
+        alt="Profile Picture" class="projects-profile-pic">
+
+        <nav class="nav-flex-container-project">
+          <h1 class="logoprojects"> Jade Hampton </h1>
+          <div class="w3-bar-item w3-hide-small nav-item-projects">
+            <a href="index.html"> <i class="fas fa-home"></i></a>
+            <a href="index.html"> Home </a>
+          </div>
+          <div class="w3-bar-item w3-hide-small nav-item-projects">
+            <a href="projects.html"><i class="fas fa-briefcase"></i></a>
+            <a href="projects.html">Projects </a>
+          </div>
+          <!-- <a href="index.html" class="w3-bar-item w3-button w3-hide-small">Home</a> -->
+          <!-- <a href="projects.html" class="w3-bar-item w3-button w3-hide-small">Projects</a> -->
+
+          <!-- Hide the hamburger icon on large and medium screens, but show on small ones -->
+          <!-- When the hamburger icon is clicked, call myFunction to show/hide toggle the container -->
+          <a href="javascript:void(0)"
+             class="w3-bar-item w3-left w3-hide-large w3-hide-medium"
+             onclick="myFunction()"><i class="fas fa-bars fa-lg"></i></a>
+        </nav>
+
+        <!-- Vertical container (w3-bar-block) for nav elements -->
+        <nav id="demo" class="w3-bar-block w3-hide w3-hide-large w3-hide-medium">
+          <a href="index.html" class="w3-bar-item w3-button">Home</a>
+          <a href="projects.html" class="w3-bar-item w3-button">Projects</a>
+        </nav>
+
+        <script src="js/nav-bar-project.js"></script>
+      </aside>
+      <article class="project-container">
+        <h1>Drone Project.</h1>
+        <!-- <img src="images/RDIscreenshot.jpg" alt="RDI Homepage Screenshot" class="project-pic"> -->
+        <div>
+          <h2>Overview.</h2>
+          <p>
+            I participated in this project along with 4 other undergraduate students and 2 faculty
+            advisors at UNC Chapel Hill in Spring 2020. As a work-study student at the BeAM Makerspace
+            on campus who had experience with 3D modeling and printing, my primary responsibility was
+            prototyping a mount that would attach a GoPro Fusion 360 camera to the DJI Phantom 4 RTK drone.
+          </p>
+          <h2>Objective.</h2>
+          <p>
+            Using the pre-installed camera on the DJI Phantom 4 RTK and the GoPro Fusion 360, we sought to
+            explore the feasibility of using drones in the field of forest conservation and management for
+            data collection.
+          </p>
+          <h2>Design Process of the Mount.</h2>
+          <p>
+            As the “engineering” portion of the team, it was my job to design a mount that would reduce/eliminate
+            the “jello effect” in the video footage created from the vibration of the drone. After conducting research on the topic (obtaining information on the specs of the drone and camera, types of mounts, etc.), I looked for designs that others created and posted on websites such as Thingiverse.com.
+          </p>
+          <p>
+             From there, I created 4 different design concepts based off of these models, altering them in a 3D modeling software to fit our drone and camera. After presenting them to the rest of the team and consulting an acquaintance of one of the advisors, we opted to print and test 3 of the mounts.
+          </p>
+          <p>
+            Upon testing, we found that one of the mounts caused the drone to be unstable and crash. The second design used two plates and braided wires to absorb the shock and vibration created from the drone. During the test flight for this design, we noticed that the plate attached to the camera and the camera itself shook erratically. Still, the video footage itself proved to be stable, with most of the jello effect eliminated. In order to further stabilize the video further, we tried more flexible wire, which eliminated the vibration of the lower plate and completely eliminated the jello effect.
+          </p>
+          <h2>Challenges and Experience.</h2>
+          <p>
+            The challenge that I faced individually was centered around my lack of experience with drones and engineering in general. I was mainly recruited as a student staff member at BeAM since I had experience with 3D modeling and printing. After researching the topic, however, I found that what the project needed of me was not that intensive, and easily do-able if enough effort was put into it.
+          </p>
+          <p>
+            As a group, I think the highest barrier that we ran into was the shut down of the school amid the COVID-19 pandemic. This project involved a decent amount of in-person meetings and field work that was affected by the shutdown. Aside from this, we were also planning on attending and presenting our project at a conference. Despite this, I feel we adapted to these changes the best that we could, and did everything within our power to conclude the project with what was available to us.
+          </p>
+        </div>
+      </article>
+      <footer> Designed and Developed by Jade Hampton </footer>
+    </div>
+  </body>
+</html>
